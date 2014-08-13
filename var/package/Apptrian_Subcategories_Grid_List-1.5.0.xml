@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Apptrian_Subcategories_Grid_List</name>
+    <version>1.5.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Shows subcategories in the form of a grid or list, on category pages and optionally on the home page.</summary>
+    <description>Apptrian Subcategories Grid/List Extension for Magento allows you to have subcategories in the form of a grid or list on category/view pages and optionally on the home page. Additionally there are several options for customization.</description>
+    <notes>+ Ability to hide subcategories on certain category pages via comma separated list of category IDs</notes>
+    <authors><author><name>Apptrian</name><user>apptrian</user><email>apptrian@yahoo.com</email></author></authors>
+    <date>2014-06-02</date>
+    <time>15:11:48</time>
+    <contents><target name="magecommunity"><dir name="Apptrian"><dir name="Subcategories"><dir name="Block"><file name="About.php" hash="556030e9e9e3c0a4d0f6cad4290e7ab2"/><file name="Info.php" hash="a20cafdf92e4b61372d2dfe8de6b7172"/></dir><dir name="Helper"><file name="Data.php" hash="55f6435e0136fe9360b2b385dcab3d62"/></dir><dir name="Model"><dir name="Config"><file name="Categoryids.php" hash="8499bb810992e593f0233245b2c5b918"/><file name="Excludeids.php" hash="f08a3d5bb5a19b8412c2617d8118b73a"/><file name="Height.php" hash="41d719bd4fa5b6fad361e70f5f3e15e6"/><file name="Layout.php" hash="4e57a72abdb500671e2059cf65d98f7e"/><file name="Mode.php" hash="eb619d39e3e6a7f3701dbb169be1c034"/><file name="Showcategoryname.php" hash="38216add7cc1f2815049417c2db257a0"/><file name="Showdescription.php" hash="40ee8c05f8010317aa77cdc8fc1cf53e"/><file name="Showimage.php" hash="f39f26c87fdcd2f4ec443575b7f5063c"/><file name="Sortattribute.php" hash="0d617cc0954a068cadd7538faba34062"/><file name="Sortdirection.php" hash="fd4b9710fe7a7ed2f1fe0122795b4ebe"/><file name="Width.php" hash="99610b0c48b9a167cb86b8987d9f02cb"/></dir></dir><dir name="etc"><file name="config.xml" hash="70cf5b4b4d78022ae429b61c0ed4e8c6"/><file name="system.xml" hash="de6adcec34a4e9972f49af1c9b141638"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="apptrian_subcategories.xml" hash="5dbb206d948e60b2cf31d6f2ef026539"/></dir><dir name="template"><dir name="apptrian"><dir name="subcategories"><file name="grid_list.phtml" hash="cefbf0bf043b64a06833194a9f2283b3"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Apptrian_Subcategories.xml" hash="8edaf4dd32ef0fec8453708362e8a143"/></dir></target><target name="magelocale"><dir name="en_US"><file name="Apptrian_Subcategories.csv" hash="0960730d1ab7638acd2408da8f3d8e08"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="css"><file name="apptrian_subcategories.css" hash="1032cac24073e90504c4fc1409fd6755"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

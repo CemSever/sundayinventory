@@ -1,0 +1,69 @@
+<div class="widget widget-new-products">
+    <div class="widget-title">
+        <h2>New Products</h2>
+    </div>
+    <div class="widget-products">
+                                <ul class="products-grid">
+                    <li class="item first">
+                <a href="http://localhost/magento/s3.html?___SID=U" title="s3" class="product-image"><img src="http://localhost/magento/media/catalog/product/cache/1/small_image/85x/9df78eab33525d08d6e5fb8d27136e95/1/8/18.jpg" width="85" height="85" alt="s3" /></a>
+                <h3 class="product-name"><a href="http://localhost/magento/s3.html?___SID=U" title="s3)">s3</a></h3>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-25-widget-new-grid">
+                                            <span class="price">€400.00</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://localhost/magento/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvLw,,/product/25/form_key/bEYXZwCI7Aoss5PV/?___SID=U')"><span><span>Add to Cart</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://localhost/magento/wishlist/index/add/product/25/form_key/bEYXZwCI7Aoss5PV/?___SID=U" class="link-wishlist">Add to Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://localhost/magento/catalog/product_compare/add/product/25/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvLw,,/form_key/bEYXZwCI7Aoss5PV/?___SID=U" class="link-compare">Add to Compare</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://localhost/magento/tst2.html?___SID=U" title="tst2" class="product-image"><img src="http://localhost/magento/media/catalog/product/cache/1/small_image/85x/9df78eab33525d08d6e5fb8d27136e95/0/7/07_1.jpg" width="85" height="85" alt="tst2" /></a>
+                <h3 class="product-name"><a href="http://localhost/magento/tst2.html?___SID=U" title="tst2)">tst2</a></h3>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-24-widget-new-grid">
+                                            <span class="price">€450.00</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://localhost/magento/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvLw,,/product/24/form_key/bEYXZwCI7Aoss5PV/?___SID=U')"><span><span>Add to Cart</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://localhost/magento/wishlist/index/add/product/24/form_key/bEYXZwCI7Aoss5PV/?___SID=U" class="link-wishlist">Add to Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://localhost/magento/catalog/product_compare/add/product/24/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvLw,,/form_key/bEYXZwCI7Aoss5PV/?___SID=U" class="link-compare">Add to Compare</a></li>
+                                            </ul>
+                </div>
+            </li>
+                                    <li class="item">
+                <a href="http://localhost/magento/s1.html?___SID=U" title="s1" class="product-image"><img src="http://localhost/magento/media/catalog/product/cache/1/small_image/85x/9df78eab33525d08d6e5fb8d27136e95/0/1/01_3.jpg" width="85" height="85" alt="s1" /></a>
+                <h3 class="product-name"><a href="http://localhost/magento/s1.html?___SID=U" title="s1)">s1</a></h3>
+                                
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-23-widget-new-grid">
+                                            <span class="price">€500.00</span>                                    </span>
+                        
+        </div>
+
+                <div class="actions">
+                                            <button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://localhost/magento/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvLw,,/product/23/form_key/bEYXZwCI7Aoss5PV/?___SID=U')"><span><span>Add to Cart</span></span></button>
+                                        <ul class="add-to-links">
+                                                    <li><a href="http://localhost/magento/wishlist/index/add/product/23/form_key/bEYXZwCI7Aoss5PV/?___SID=U" class="link-wishlist">Add to Wishlist</a></li>
+                                                                            <li><span class="separator">|</span> <a href="http://localhost/magento/catalog/product_compare/add/product/23/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvLw,,/form_key/bEYXZwCI7Aoss5PV/?___SID=U" class="link-compare">Add to Compare</a></li>
+                                            </ul>
+                </div>
+            </li>
+                </ul>
+                    </div>
+</div>
