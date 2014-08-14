@@ -3199,6 +3199,8 @@ body {
   min-width: 100px;
   min-height: 44px;*/
   text-align: center;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 3px;
 }
 .logo img {
   max-width: 100%;
@@ -3219,6 +3221,7 @@ body {
   .logo {
 /*    max-width: 300px;
     min-height: 90px;*/
+  
   }
   .logo .small {
     display: none;
@@ -3233,13 +3236,16 @@ body {
 .skip-links {
   clear: both;
   overflow: hidden;
-  border-top: 1px solid #EDEDED;
-  border-bottom: 1px solid #EDEDED;
+  border-top: 1px dotted #333333;
+  border-bottom: 1px dotted #333333;
+  text-align: center;
+  font-family: Times,serif;
 }
 
 @media only screen and (min-width: 771px) {
   .skip-links {
-    border: 0;
+    /*border: 0;*/
+
   }
 }
 /* -------------------------------------------- *
@@ -3247,13 +3253,14 @@ body {
  */
 .skip-link {
   position: relative;
-  float: left;
-  width: 20%;
+  /*float: left;*/
   height: 44px;
-  background: #FFFFFF;
+  background: #f4f4f4;
   color: #636363;
   line-height: 42px;
   text-align: center;
+  z-index: 1;
+  margin-right: 20px;
 }
 
 a.skip-link {
@@ -3275,7 +3282,7 @@ a.skip-link {
 }
 @media only screen and (min-width: 500px) {
   .skip-link {
-    width: 25%;
+    /*width: 25%;*/
   }
 }
 /* -------------------------------------------- *
@@ -3299,6 +3306,7 @@ a.skip-link {
   width: 30px;
   height: 30px;
   vertical-align: middle;
+  display: none;
 }
 
 .skip-link.skip-nav .icon,
@@ -3424,7 +3432,7 @@ a.skip-link {
   display: block;
   color: #636363;
   line-height: 30px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times,serif;
 }
 .nav-primary li {
   position: relative;
@@ -3676,23 +3684,21 @@ a.skip-link {
 
 @media only screen and (min-width: 771px) {
   .skip-account {
-    position: absolute;
+   /* position: absolute;
     top: 0;
-    right: 115px;
-    width: auto;
-    padding: 0 10px;
+    right: 115px;*/
+    /*width: auto;*/
     text-transform: uppercase;
+    text-align: center;
   }
 
   #header-account.skip-active {
-    background: #FBFBFB;
+    background: #f4f4f4;
     border: solid 1px #cccccc;
-    display: block;
-    position: absolute;
+    position: relative;
     z-index: 200;
-    top: 40px;
-    right: 115px;
     width: 200px;
+    margin-top: 40px; 
   }
 
   #header-account a {
@@ -3736,27 +3742,26 @@ a.skip-link {
 }
 .skip-cart .icon {
   background-position: 0px -95px;
+  display: none;
+
 }
 
 @media only screen and (min-width: 771px) {
   .skip-cart {
-    position: absolute;
+    /*position: absolute;
     top: 0;
     right: 0;
     width: auto;
-    padding: 0 10px;
+    padding: 0 10px;*/
   }
 
   #header-cart.skip-active {
-    background: #FBFBFB;
+    background: #f4f4f4;
     border: solid 1px #cccccc;
-    display: block;
-    position: absolute;
+    position: relative;
     z-index: 200;
-    top: 40px;
-    right: 0;
-    width: 320px;
-    background: white;
+    width: 200px;
+    margin-top: 40px; 
   }
 }
 /* -------------------------------------------- *
@@ -3797,8 +3802,9 @@ a.skip-link {
 }
 @media only screen and (min-width: 771px) {
   .skip-cart {
-    color: #3399cc;
+    color: #333333;
     text-transform: uppercase;
+    /*padding: 0 10px;*/
   }
   .skip-cart:hover {
     text-decoration: none;
@@ -4563,7 +4569,22 @@ p.product-name a:hover {
   width: 100%;
   max-width: 100%;
 }
+/*apptirian subcat lister css additions*/
+.subcategories-layout-grid {
+  margin-top: 60px;
+}
 
+.subcategories-layout-grid li {
+  width: 27%;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 3%;
+  padding-bottom: 25px;
+}
+
+.subcategories-layout-grid li img {
+  width: 100%;
+}
 /* ============================================ *
  * Catalog - List
  * ============================================ */
@@ -9072,6 +9093,8 @@ div.paypal-logo span > img {
   clear: both;
   position: relative;
 }
+.header-minicart {
+}
 .header-minicart .minicart-wrapper:before, .header-minicart .minicart-wrapper:after {
   content: '';
   position: absolute;
@@ -9452,6 +9475,25 @@ div.paypal-logo span > img {
 /* ============================================ *
  * CMS Pages
  * ============================================ */
+.cms-home .col-main {
+  width: 115%;
+    overflow: hidden;
+    padding-top: 40px;
+
+}
+.cms-home .std img {
+  width: 100%;
+  margin-bottom:1.5em;
+}
+.cms-home .std {
+  width: 87%;
+  text-align: center;
+  font-family: Times,serif;
+}
+.cms-home .std p {
+  margin-bottom: 0;
+}
+
 .cms-page-view .page-title h1,
 .cms-page-view .page-title h3,
 .cms-page-view .page-head h1,

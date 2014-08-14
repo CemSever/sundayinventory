@@ -1,0 +1,1 @@
+<block name="wysiwyg_images.files" type="adminhtml/cms_wysiwyg_images_content_files" template="cms/browser/content/files.phtml" output="toHtml"/>
