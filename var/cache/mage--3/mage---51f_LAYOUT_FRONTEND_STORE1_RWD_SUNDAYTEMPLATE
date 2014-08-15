@@ -642,8 +642,12 @@
             
         </reference>
    <reference name="right">
-      <block type="catalog/product_compare_sidebar" before="cart_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
-   </reference>
+           
+            
+                
+                
+            
+        </reference>
    <reference name="footer_links">
       <action method="addLink" translate="label title" module="catalog" ifconfig="catalog/seo/site_map">
          <label>Site Map</label>
