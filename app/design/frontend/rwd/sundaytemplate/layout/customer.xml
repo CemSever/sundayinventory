@@ -55,6 +55,9 @@ Default layout, loads most of the pages
         <reference name="footer_links2">
             <action method="addLink" translate="label title" module="catalog"><label>My Account</label><url helper="customer/getAccountUrl" /><title>My Account</title></action>
         </reference>
+
+
+
     </default>
 
 <!--

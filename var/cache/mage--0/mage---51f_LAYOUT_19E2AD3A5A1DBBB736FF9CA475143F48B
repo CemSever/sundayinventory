@@ -176,16 +176,6 @@
          </action>
       </block>
       <block type="page/switch" name="store_switcher" as="store_switcher" after="*" template="page/switch/stores.phtml"/>
-      <block type="page/template_links" name="footer_links" as="footer_links" template="page/template/links.phtml">
-         <action method="setTitle">
-            <title>Quick Links</title>
-         </action>
-      </block>
-      <block type="page/template_links" name="footer_links2" as="footer_links2" template="page/template/links.phtml">
-         <action method="setTitle">
-            <title>Account</title>
-         </action>
-      </block>
    </block>
    <block type="core/text_list" name="before_body_end" as="before_body_end" translate="label">
       <label>Page Bottom</label>
@@ -405,6 +395,34 @@
 <reference name="footer">
    <block type="newsletter/subscribe" name="footer.newsletter" as="newsletter" before="footer_store_language" template="newsletter/subscribe.phtml"/>
 </reference>
+<reference name="root">
+   <reference name="top.links">
+      <action method="addLink" translate="label title">
+         <label>About Us</label>
+         <url>about</url>
+         <title>About Us</title>
+         <prepare>true</prepare>
+         <urlParams helper="core/url/getHomeUrl"/>
+         <position>1</position>
+         <liParams/>
+         <aParams>class=&quot;top-link-about-us&quot;</aParams>
+         <beforeText/>
+         <afterText/>
+      </action>
+      <action method="removeLinkByUrl">
+         <url helper="customer/getAccountUrl"/>
+      </action>
+      <action method="removeLinkByUrl">
+         <url helper="wishlist/"/>
+      </action>
+      <remove name="wishlist_link"/>
+      <remove name="checkout_cart_link"/>
+      <block type="checkout/links" name="checkout_cart_link_custom">
+         <action method="addCartLink"/>
+         <action method="addCheckoutLink"/>
+      </block>
+   </reference>
+</reference>
 <reference name="left_first">
    <block type="cms/block" name="cms_menu">
       <action method="setBlockId">
@@ -491,4 +509,9 @@
 <remove name="reorder"/>
 <reference name="right">
    <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>
+<reference name="top.links">
+   <action method="removeLinkByUrl">
+      <url helper="customer/getLoginUrl"/>
+   </action>
 </reference>

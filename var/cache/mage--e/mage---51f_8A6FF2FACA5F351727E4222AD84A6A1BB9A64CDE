@@ -23,32 +23,17 @@
     //]]>
     </script>
 </div>
+<div class="links">
+<ul>
+<li><a href="http://localhost/magento/?___SID=Ucontacts/">Contact</a></li>
+<li><a href="http://localhost/magento/?___SID=Uprivacy-policy-cookie-restriction-mode/">Privacy Policy</a></li>
+<li><a href="http://localhost/magento/?___SID=Ulegal/">Legal Area</a></li>
+<li><a href="http://localhost/magento/?___SID=Ulegal/">Twitter</a></li>
+<li><a href="http://localhost/magento/?___SID=Ulegal/">Facebook</a></li>
+<li><a href="http://localhost/magento/?___SID=Ulegal/">Instagram</a></li>
 
-<div class="links">
-    <div class="block-title">
-        <strong><span>Company</span></strong>
-    </div>
-    <ul>
-        <li><a href="http://localhost/magento/?___SID=Uabout-magento-demo-store/">About Us</a></li>
-        <li><a href="http://localhost/magento/?___SID=Ucontacts/">Contact Us</a></li>
-        <li><a href="http://localhost/magento/?___SID=Ucustomer-service/">Customer Service</a></li>
-        <li><a href="http://localhost/magento/?___SID=Uprivacy-policy-cookie-restriction-mode/">Privacy Policy</a></li>
-    </ul>
-</div><div class="links">
-        <div class="block-title"><strong><span>Quick Links</span></strong></div>
-        <ul>
-                                    <li class="first" ><a href="http://localhost/magento/catalog/seo_sitemap/category/?___SID=U" title="Site Map" >Site Map</a></li>
-                                                <li ><a href="http://localhost/magento/catalogsearch/term/popular/?___SID=U" title="Search Terms" >Search Terms</a></li>
-                                                <li class=" last" ><a href="http://localhost/magento/catalogsearch/advanced/?___SID=U" title="Advanced Search" >Advanced Search</a></li>
-                        </ul>
-</div>
-<div class="links">
-        <div class="block-title"><strong><span>Account</span></strong></div>
-        <ul>
-                                    <li class="first" ><a href="http://localhost/magento/customer/account/?___SID=U" title="My Account" >My Account</a></li>
-                                                <li class=" last" ><a href="http://localhost/magento/sales/guest/form/?___SID=U" title="Orders and Returns" >Orders and Returns</a></li>
-                        </ul>
-</div>
-        <address class="copyright">&copy; 2014 Magento Demo Store. All Rights Reserved.</address>
+
+</ul>
+</div>        <address class="copyright">&copy; 2014 Sunday Inventory. All Rights Reserved.</address>
     </div>
 </div>

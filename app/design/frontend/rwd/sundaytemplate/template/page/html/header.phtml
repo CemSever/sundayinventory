@@ -46,37 +46,41 @@
 
         <div class="skip-links">
             
-            <a href="<?php echo $this->getUrl('') ?>" class="skip-link skip-artists" >
+            <a href="<?php echo $this->getUrl('') ?>" class=" skip-artists" >
                 <span class="label">ARTISTS</span>
             </a>
 
-            <a href="/overview" class="skip-link skip-overview" >
+            <a href="overview" class="skip-overview" >
                 <span class="label">OVERVIEW</span>
             </a>
 
-            <a href="/gallery" class="skip-link skip-gallery" >
+            <a href="gallery" class="skip-gallery" >
                 <span class="label">GALLERY</span>
             </a>
 
-            <a href="/exhibitions" class="skip-link skip-exhibitions" >
-                <span class="label">EXHIBITIONS</span>
+            <a href="customer/account/login/" class="skip-account">
+                <span class="label">MY ACCOUNT</span>
             </a>
 
-             <a href="/news" class="skip-link skip-news" >
-                <span class="label">NEWS</span>
+            <a href="help" class="skip-help">
+                <span class="label">HELP</span>
             </a>
 
-            <a href="#header-account" class="skip-link skip-account">
-                <span class="label"><?php echo $this->__('My Account'); ?></span>
+            <a href="checkout/cart" class="skip-cart">
+                <span class="label">VIEW BASKET</span>
             </a>
 
-            <!-- Cart -->
+            <a class="skip-lang1">
+               <span class="label">繁體中文</span> 
+            </a>
 
-                <?php echo $this->getChildHtml('minicart_head'); ?>
+            <a class="skip-lang1">
+              <span class="label">简体中文</span>  
+            </a>
 
-         <div id="header-account" class="skip-content">
-            <?php echo $this->getChildHtml('topLinks') ?>
-        </div>
+            <a class="skip-lang1">
+               <span class="label">日本語</span> 
+            </a>
 
         </div>
 
