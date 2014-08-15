@@ -1,0 +1,59 @@
+<?php
+// $rootcatId= Mage::app()->getStore()->getRootCategoryId();
+
+//load all Categories in ASC order
+// $categories = Mage::getModel('catalog/category')->getCategories($rootcatId, 0, true,true);
+ $categories = Mage::getModel('catalog/category')->load('3')->getChildrenCategories();
+?>
+    
+    <?php foreach($categories as $category): ?>
+        
+    <?php 
+        //load all Categories by ID
+        $loadCategory = Mage::getModel('catalog/category')->load($category->getId());
+
+        //match artists cat name
+        //get Product Count for each Category
+        $categoryProdCount = $loadCategory->getProductCount();
+        
+       //load only those Categories which are Active and has Products
+       if($categoryProdCount > 0 && $category->getIsActive()): ?>
+       
+       <?php $i=0;
+           
+        //load only Enabled Products Collection
+           $productsCollection = Mage::getModel('catalog/category')
+                                    ->load($category->getId())
+                                    ->getProductCollection()
+                                    ->addAttributeToSelect('*')
+                                    ->addAttributeToFilter('status', 1) // enabled
+                                    ->addAttributeToSort('name', 'ASC') // sort products by ASC order
+                                    ->addAttributeToFilter('visibility', 4); //visibility in catalog,search
+                                    
+       ?>
+        
+       <?php $_collectionSize = $productsCollection->count();?> 
+       <?php foreach ($productsCollection as $_product): ?>
+        
+        <?php if ($i++%$_collectionSize==0): ?>
+        <ul class="products-grid subcategories-layout-grid">
+        <?php endif ?>
+        <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
+        
+           <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_product->getSmallImageLabel(); ?>" class="product-image"><img src="<?php echo Mage::helper('catalog/image')->init($_product, 'image'); ?>" alt="<?php echo $_product->getSmallImageLabel(); ?>" /></a>
+           <h3><?php echo $category->getName();?></h3>
+           <h3><?php echo Mage::helper('catalog/output')->productAttribute($_product, $_product->getName(), 'name') ?></h3>
+        
+        <br/>
+            
+      <?php if ($i==$_collectionSize): ?>
+      </ul>
+      <?php endif ?>    
+      <?php endforeach; ?>
+      
+      
+      <?php endif; ?>
+      <?php endforeach; ?>
+    
+      
+<script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>

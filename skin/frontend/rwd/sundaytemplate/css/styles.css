@@ -3221,6 +3221,8 @@ body {
   border-bottom: 1px dotted #333333;
   text-align: center;
   font-family: Times,serif;
+  height: 70px;
+  padding-top: 14px;
 }
 .skip-links a {
    position: relative;
@@ -3818,7 +3820,11 @@ display:none;
 .skip-cart .count.empty {
   display: none;
 }
+/*PRODUCTS GRID AKA OVERVIEW*/
 
+.products-grid li {
+  list-style: none;
+}
 /* -------------------------------------------- *
  * Mini Cart - Empty
  */
