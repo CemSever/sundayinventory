@@ -716,7 +716,7 @@ var ProductMediaManager = {
 
         enquire.register("screen and (min-width:768px)", {
             match : function() {
-                ProductMediaManager.zoomEnabled = true;
+                ProductMediaManager.zoomEnabled = false;
                 ProductMediaManager.initZoom();
             },
             unmatch : function() {
@@ -740,3 +740,5 @@ var ProductMediaManager = {
 $j(document).ready(function() {
     ProductMediaManager.init();
 });
+
+

@@ -71,5 +71,15 @@
     </div>
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
+<script>
+  jQuery( document ).ready(function($) {
+    if ($('.catalog-category-view')) {
+       
+        $('.category-image').insertAfter('.category-description');
+        $('.category-title').prependTo('.category-description');
+         
+         };
+    });
+</script>
 </body>
 </html>

@@ -91,10 +91,6 @@
             <type>skin_js</type>
             <name>js/lib/imagesloaded.js</name>
          </action>
-         <action method="addLinkRel">
-            <rel>stylesheet</rel>
-            <href>//fonts.googleapis.com/css?family=Raleway:300,400,500,700,600</href>
-         </action>
          <action method="addItem">
             <type>skin_js</type>
             <name>js/minicart.js</name>

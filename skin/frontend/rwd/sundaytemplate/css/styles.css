@@ -4123,7 +4123,10 @@ display:none;
 body.catalogsearch-result-index .page-title h1 {
   border-bottom: none;
 }
-
+.category-title h1{
+  font-weight: normal;
+  font-size: 16px;
+}
 .category-image {
   margin-bottom: 1.5em;
 }
@@ -4316,6 +4319,11 @@ p.product-name a:hover {
   .products-grid > li:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+/*PRODUCT PAGE*/
+.more-views{
+  display:none;
 }
 @media only screen and (min-width: 960px) {
   /* Config: Columns + flexible gutter */
@@ -4611,7 +4619,7 @@ p.product-name a:hover {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin-left: 9%;
+  margin-right: 9%;
 }
 .selectedworktitle {
   margin-bottom: 50px;
