@@ -489,7 +489,7 @@ input,
 select,
 table,
 textarea {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   color: #636363;
   font-size: 14px;
   line-height: 1.5;
@@ -576,7 +576,7 @@ h5, .h5 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-size: 13px;
   font-weight: bold;
   font-style: normal;
@@ -589,7 +589,7 @@ h6, .h6 {
   margin: 0;
   margin-bottom: 5px;
   color: #636363;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
@@ -1500,7 +1500,7 @@ a.button:hover {
  */
 .price-box {
   margin: 7px 0;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .price-box p {
@@ -1519,7 +1519,7 @@ a.button:hover {
 .price-box .price,
 .price {
   white-space: nowrap;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .price-box .price-label {
@@ -1900,7 +1900,7 @@ a.button:hover {
 }
 .pager .amount {
   float: left;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   white-space: nowrap;
   margin: 0 15px 0 0;
 }
@@ -1948,7 +1948,7 @@ a.button:hover {
   height: 30px;
   padding: 0;
   color: #3399cc;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .pages .current,
@@ -2237,7 +2237,7 @@ span.required:after {
   content: ' *';
   color: red;
   font-weight: normal;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
 }
 
@@ -3173,7 +3173,7 @@ a.skip-link {
   font-size: 11px;
   line-height: 22px;
   text-align: center;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .skip-link.skip-active .count {
@@ -3505,7 +3505,7 @@ p.product-name {
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
   font-size: 13px;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -5407,7 +5407,7 @@ p.product-name a:hover {
 }
 .cart .cart-totals table tfoot strong span,
 .cart .cart-totals table tfoot span.price {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 .cart .cart-totals table tfoot strong {
   font-weight: 400;
@@ -6202,7 +6202,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   display: block;
 }
 .remember-me-popup p {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 .remember-me-popup .remember-me-popup-close {
   position: absolute;
@@ -7607,7 +7607,7 @@ div.paypal-logo span > img {
   list-style: none;
   margin-left: 0;
   font-style: normal;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 #accordion .toggle-tabs {

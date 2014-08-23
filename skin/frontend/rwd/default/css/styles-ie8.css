@@ -489,7 +489,7 @@ input,
 select,
 table,
 textarea {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   color: #636363;
   font-size: 14px;
   line-height: 1.5;
@@ -524,7 +524,7 @@ h1, .h1 {
   margin: 0;
   margin-bottom: 0.7em;
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 28px;
   font-weight: 400;
   font-style: normal;
@@ -537,7 +537,7 @@ h2, .h2 {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -550,7 +550,7 @@ h3, .h3 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -563,7 +563,7 @@ h4, .h4 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -576,7 +576,7 @@ h5, .h5 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-size: 13px;
   font-weight: bold;
   font-style: normal;
@@ -589,7 +589,7 @@ h6, .h6 {
   margin: 0;
   margin-bottom: 5px;
   color: #636363;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   font-weight: bold;
   font-style: normal;
@@ -670,7 +670,7 @@ h6, .h6 {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -746,7 +746,7 @@ body:not(.customer-account) .block:first-child .block-title {
 .block-account li,
 .block-cms-menu li {
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   margin: 7px 0;
 }
 .block-account li strong,
@@ -810,7 +810,7 @@ body:not(.customer-account) .block:first-child .block-title {
   color: #FFFFFF;
   font-size: 13px;
   font-weight: normal;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
@@ -882,7 +882,7 @@ a.button:hover {
   text-transform: uppercase;
   display: inline-block;
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .button2 span:hover,
 .button2 span span:hover {
@@ -983,7 +983,7 @@ a.button:hover {
 .breadcrumbs li {
   float: left;
   font-size: 12px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   text-transform: uppercase;
 }
 
@@ -1294,7 +1294,7 @@ a.button:hover {
   text-align: center;
   margin: 10px;
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 
 /* -------------------------------------------- *
@@ -1500,7 +1500,7 @@ a.button:hover {
  */
 .price-box {
   margin: 7px 0;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .price-box p {
@@ -1519,13 +1519,13 @@ a.button:hover {
 .price-box .price,
 .price {
   white-space: nowrap;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .price-box .price-label {
   color: #a0a0a0;
   white-space: nowrap;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 
 .price-box .minimal-price-link {
@@ -1608,7 +1608,7 @@ a.button:hover {
  * ============================================ */
 .item-options {
   font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .item-options:after {
   content: '';
@@ -1819,7 +1819,7 @@ a.button:hover {
 
 .toolbar,
 .pager {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   color: #636363;
   line-height: 30px;
   font-size: 12px;
@@ -1900,7 +1900,7 @@ a.button:hover {
 }
 .pager .amount {
   float: left;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   white-space: nowrap;
   margin: 0 15px 0 0;
 }
@@ -1948,7 +1948,7 @@ a.button:hover {
   height: 30px;
   padding: 0;
   color: #3399cc;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .pages .current,
@@ -2186,7 +2186,7 @@ form .legend {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -2223,7 +2223,7 @@ form .legend {
 label {
   display: inline-block;
   font-size: 13px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-weight: 600;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2237,7 +2237,7 @@ span.required:after {
   content: ' *';
   color: red;
   font-weight: normal;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
 }
 
@@ -2556,7 +2556,7 @@ form .form-instructions {
 .data-table th {
   background: #f4f4f4;
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   line-height: 1.4;
   white-space: nowrap;
 }
@@ -2646,7 +2646,7 @@ body {
 
 .header-language-container,
 .page-header {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 
 /* ============================================ *
@@ -2873,7 +2873,7 @@ a.skip-link {
   display: block;
   color: #636363;
   line-height: 30px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .nav-primary li {
   position: relative;
@@ -3022,7 +3022,7 @@ a.skip-link {
   width: 100%;
   height: 40px;
   padding-right: 40px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 
 #search_mini_form .search-button {
@@ -3173,7 +3173,7 @@ a.skip-link {
   font-size: 11px;
   line-height: 22px;
   text-align: center;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 .skip-link.skip-active .count {
@@ -3243,7 +3243,7 @@ a.skip-link {
 /* Subtotal */
 .cart-menu .subtotal {
   padding: 0 15px 15px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 24px;
   line-height: 1.2;
 }
@@ -3298,7 +3298,7 @@ a.skip-link {
  */
 .footer,
 .footer button {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 
 .footer {
@@ -3497,7 +3497,7 @@ p.product-name {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -3505,7 +3505,7 @@ p.product-name {
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
   font-size: 13px;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -3530,7 +3530,7 @@ p.product-name a:hover {
   text-transform: uppercase;
   margin-bottom: 5px;
   font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .products-grid .product-name a,
 .products-list .product-name a {
@@ -3929,7 +3929,7 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -3973,7 +3973,7 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -4044,7 +4044,7 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -4601,7 +4601,7 @@ p.product-name a:hover {
 
 .grouped-items-table .name-wrapper {
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .grouped-items-table .qty-wrapper {
   padding-top: 7px;
@@ -4797,7 +4797,7 @@ p.product-name a:hover {
   margin: 0;
   margin-bottom: 0.5em;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 24px;
   font-weight: 400;
   font-style: normal;
@@ -5143,7 +5143,7 @@ p.product-name a:hover {
 }
 
 .cart-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .cart-table th,
 .cart-table td,
@@ -5161,7 +5161,7 @@ p.product-name a:hover {
 .cart-table tbody td {
   background-color: transparent;
   padding: 10px 5px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .cart-table .product-cart-info,
 .cart-table .product-cart-actions {
@@ -5182,7 +5182,7 @@ p.product-name a:hover {
   font-size: 9px;
   padding: 0 5px;
   text-transform: uppercase;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .cart-table .product-cart-image .cart-links,
 .cart-table .product-cart-info .btn-remove,
@@ -5334,7 +5334,7 @@ p.product-name a:hover {
   margin-top: 4px;
 }
 .shipping .form-list label {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
@@ -5353,7 +5353,7 @@ p.product-name a:hover {
   min-width: 100px;
 }
 .shipping .sp-methods label span {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-weight: bold;
   font-style: normal;
 }
@@ -5379,7 +5379,7 @@ p.product-name a:hover {
   clear: both;
 }
 .cart .cart-totals table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -5407,7 +5407,7 @@ p.product-name a:hover {
 }
 .cart .cart-totals table tfoot strong span,
 .cart .cart-totals table tfoot span.price {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 .cart .cart-totals table tfoot strong {
   font-weight: 400;
@@ -5430,7 +5430,7 @@ p.product-name a:hover {
 }
 #discount-coupon-form label,
 .cart .giftcard label {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   font-weight: 400;
   text-align: left;
@@ -5784,7 +5784,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -6202,7 +6202,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   display: block;
 }
 .remember-me-popup p {
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 .remember-me-popup .remember-me-popup-close {
   position: absolute;
@@ -6280,7 +6280,7 @@ body.customer-account .data-table {
   margin-top: 5px;
 }
 body.customer-account .data-table td a {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   text-transform: uppercase;
   font-style: normal;
   font-size: 13px;
@@ -6413,7 +6413,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 .dashboard .box-reviews li .details .ratings strong {
   float: left;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 13px;
   margin-right: 5px;
 }
@@ -6468,7 +6468,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 
 .order-date {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   text-transform: uppercase;
 }
 
@@ -6500,7 +6500,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
 }
 .order-info-box .box-title h2 {
   font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-weight: bold;
   line-height: 1.5;
 }
@@ -6523,7 +6523,7 @@ body.customer-account .sidebar .block-reorder ol#cart-sidebar-reorder p.product-
   padding-left: 15px;
 }
 .order-info-box .box-content strong {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -6711,7 +6711,7 @@ div.paypal-logo span > img {
   margin-bottom: 0;
 }
 #customer-reviews .review-heading .pager .count-container .limiter label {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -6727,7 +6727,7 @@ div.paypal-logo span > img {
   color: #636363;
 }
 #customer-reviews h3 {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
@@ -6741,7 +6741,7 @@ div.paypal-logo span > img {
 }
 #customer-reviews .fieldset h4 {
   border-bottom: 1px solid #cccccc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   font-weight: normal;
   padding-bottom: 5px;
@@ -6751,7 +6751,7 @@ div.paypal-logo span > img {
   display: none;
 }
 #customer-reviews .fieldset .form-list {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   font-weight: normal;
   margin: 10px 0;
@@ -6786,7 +6786,7 @@ div.paypal-logo span > img {
   width: 470px;
 }
 #customer-reviews dl {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   font-weight: normal;
   margin-bottom: 10px;
@@ -6801,7 +6801,7 @@ div.paypal-logo span > img {
   margin: 10px 0;
 }
 #customer-reviews dl dd .ratings-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   width: 100%;
 }
@@ -6814,7 +6814,7 @@ div.paypal-logo span > img {
 }
 #customer-reviews dl dd .review-meta {
   color: #3399cc;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 10px;
   font-weight: normal;
   text-transform: uppercase;
@@ -6864,7 +6864,7 @@ div.paypal-logo span > img {
  * Ratings - Global
  * ============================================ */
 .ratings-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -7076,7 +7076,7 @@ div.paypal-logo span > img {
   text-align: center;
 }
 #wishlist-table.clean-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   text-transform: uppercase;
   width: 100%;
@@ -7089,13 +7089,13 @@ div.paypal-logo span > img {
   vertical-align: top;
 }
 #wishlist-table.clean-table thead th {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   text-transform: uppercase;
 }
 #wishlist-table .product-name {
   font-size: 16px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   margin-bottom: 0;
   text-transform: uppercase;
 }
@@ -7104,7 +7104,7 @@ div.paypal-logo span > img {
 }
 #wishlist-table .wishlist-sku {
   font-size: 11px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   margin: 5px 0;
 }
 #wishlist-table textarea {
@@ -7112,7 +7112,7 @@ div.paypal-logo span > img {
   width: 100%;
   height: 45px;
   font-size: 11px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 #wishlist-table textarea::-webkit-input-placeholder {
   text-transform: uppercase;
@@ -7177,7 +7177,7 @@ div.paypal-logo span > img {
   width: 20px;
 }
 #wishlist-table .price-box {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
 }
 #wishlist-table .price-box .price {
@@ -7273,7 +7273,7 @@ div.paypal-logo span > img {
 }
 .header-minicart .block-subtitle {
   color: #50A4CF;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 10px;
   font-weight: bold;
   line-height: 1.4;
@@ -7488,7 +7488,7 @@ div.paypal-logo span > img {
 .product-review .product-img-box p.label {
   border-bottom: 1px solid #cccccc;
   font-size: 16px;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   margin-top: 20px;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -7501,11 +7501,11 @@ div.paypal-logo span > img {
   color: #3399CC;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   padding-bottom: 10px;
 }
 .product-review .ratings-table {
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
 }
 .product-review .ratings-table th {
   padding-right: 10px;
@@ -7520,14 +7520,14 @@ div.paypal-logo span > img {
   border-bottom: 1px solid #cccccc;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   margin-top: 20px;
   padding: 10px 0;
   text-transform: uppercase;
 }
 .product-review .ratings-description dd {
   color: #737373;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 13px;
 }
 
@@ -7607,7 +7607,7 @@ div.paypal-logo span > img {
   list-style: none;
   margin-left: 0;
   font-style: normal;
-  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family:  Times, "Times New Roman",Georgia, serif;
 }
 
 #accordion .toggle-tabs {
@@ -7617,7 +7617,7 @@ div.paypal-logo span > img {
   margin: 0;
   margin-bottom: 10px;
   color: #636363;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -7715,7 +7715,7 @@ div.paypal-logo span > img {
 }
 .price-box .minimal-price-link .label {
   color: #cf5050;
-  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
   text-transform: uppercase;
 }
