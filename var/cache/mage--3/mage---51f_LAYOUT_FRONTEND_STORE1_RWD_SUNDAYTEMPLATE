@@ -5560,6 +5560,11 @@
       </block>
    </reference>
 </cms_index_index>
+<PRODUCT_TYPE_configurable>
+   <reference name="product.info.options.wrapper">
+      <block type="configurable/frontend_configurable" name="product.info.options.configurable" as="options_configurable" before="-" template="configurable/product/view/type/options/configurable.phtml"/>
+   </reference>
+</PRODUCT_TYPE_configurable>
 <moneybookers_processing_payment>
    <reference name="root">
       <action method="setTemplate">

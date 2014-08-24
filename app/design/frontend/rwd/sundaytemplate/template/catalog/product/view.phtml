@@ -36,9 +36,28 @@
 <script type="text/javascript">
     var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
 </script>
+<script>
+    jQuery(document).ready(function($){
+        $('#header').hide();
+        $('.footer').hide();
+        $('.col1-layout').removeClass('main-container');
+        $('.product-image').removeClass('product-image');
+        // $('.image-main').css('width','100%');
+        $('.product-essential').css('min-width','18%');
+         $('.product-essential').css('float','left');
+                 //$('.product-essential').css('min-width','15%');
+        $('.product-essential').css('display','inline-block');
+        $('.product-essential').css('vertical-align','top');
+        $('.product-img-box').css('display','inline-block');
+        $('.product-img-box').css('width','80%');
+        // $('#image-main').css('max-height','1100px');
+
+    });
+
+</script>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
 <div class="product-view">
-    <div class="product-essential">
+    <div class="product-essential">        
         <form action="<?php echo $this->getSubmitUrl($_product) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
             <?php echo $this->getBlockHtml('formkey') ?>
             <div class="no-display">
@@ -46,13 +65,7 @@
                 <input type="hidden" name="related_product" id="related-products-field" value="" />
             </div>
 
-            <div class="product-img-box">
-                <div class="product-name">
-                    <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
-                </div>
-                <?php echo $this->getChildHtml('media') ?>
-            </div>
-
+           
             <div class="product-shop">
                 <div class="product-name">
                     <span class="h1"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>
@@ -166,11 +179,17 @@
 
         //]]>
         //
-       
+
         </script>
     </div>
 
-  
+   <div class="product-img-box">
+                <div class="product-name">
+                    <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+                </div>
+                <?php echo $this->getChildHtml('media') ?>
+            </div>
+
 
     <?php echo $this->getChildHtml('upsell_products') ?>
     <?php echo $this->getChildHtml('product_additional_data') ?>

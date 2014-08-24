@@ -779,6 +779,9 @@
 <reference name="product.info.configurable.extra">
    <block type="cataloginventory/stockqty_type_configurable" template="cataloginventory/stockqty/composite.phtml"/>
 </reference>
+<reference name="product.info.options.wrapper">
+   <block type="configurable/frontend_configurable" name="product.info.options.configurable" as="options_configurable" before="-" template="configurable/product/view/type/options/configurable.phtml"/>
+</reference>
 <reference name="top.links">
    <action method="addLink" translate="label title" module="customer">
       <label>Log In</label>
