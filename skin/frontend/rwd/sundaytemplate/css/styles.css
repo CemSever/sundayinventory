@@ -960,6 +960,7 @@ a.button:hover {
   background: transparent;
   cursor: pointer;
   vertical-align: middle;
+
 }
 
 .button2:focus {
@@ -970,8 +971,7 @@ a.button:hover {
 .button2 span span {
   line-height: 30px;
   height: 30px;
-  text-decoration: underline;
-  text-transform: uppercase;
+  text-decoration: none;
   display: inline-block;
   color: #333333;
   font-family: Times, "Times New Roman",Georgia, serif;
@@ -1431,7 +1431,7 @@ a.button:hover {
 .col2-set .col-1,
 .col2-set .col-2 {
   width: 50%;
-  padding: 20px;
+  /*padding:0,0,20px,20px;*/
 }
 @media only screen and (max-width: 770px) {
   .col2-set .col-1,
@@ -1446,6 +1446,8 @@ a.button:hover {
 .col2-set .col-2 {
   float: right;
   padding-right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media only screen and (max-width: 479px) {
   .col2-set .col-1,
@@ -1830,6 +1832,7 @@ a.button:hover {
 .item-options {
   font-size: 14px;
   font-family: Times, "Times New Roman",Georgia, serif;
+  text-transform: capitalize;
 }
 .item-options:after {
   content: '';
@@ -2330,9 +2333,18 @@ a.button:hover {
     display: none;
   }
 }
+
+
+.cart h1{
+  font-size:14px;
+  font-weight: normal;
+}
+
+
 /* ============================================ *
  * Tax - Full Tax Summary
  * ============================================ */
+
 #checkout-review-table .summary-collapse,
 #shopping-cart-totals-table .summary-collapse,
 body.customer-account .data-table .summary-collapse {
@@ -2472,7 +2484,7 @@ body.customer-account .data-table .show-details .summary-collapse:hover:before {
 }
 .fieldset p.required {
   margin-bottom: 5px;
-  float: right;
+  /*float: right;*/
   font-size: 12px;
   margin-top: 0px;
 }
@@ -2523,7 +2535,7 @@ label {
   display: inline-block;
   font-size: 13px;
   font-family: Times, "Times New Roman",Georgia, serif;
-  font-weight: 600;
+  /*font-weight: 600;*/
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
@@ -2627,7 +2639,7 @@ input[type=number],
 input[type=password],
 input[type=tel],
 input[type=text] {
-  width: 365px;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -2656,6 +2668,7 @@ input[type=text].qty {
   width: 3em;
   text-align: center;
   vertical-align: middle;
+  border: none;
 }
 
 /* -------------------------------------------- *
@@ -2763,7 +2776,7 @@ p.required,
 #co-shipping-method-form .sp-methods dd label,
 .product-options ul.options-list label {
   color: #636363;
-  background-color: #f4f4f4;
+  /*background-color: #f4f4f4;*/
   padding: 5px 10px;
   display: inline-block;
   width: auto;
@@ -2777,7 +2790,7 @@ p.required,
 #checkout-shipping-method-load .sp-methods dd label:hover,
 #co-shipping-method-form .sp-methods dd label:hover,
 .product-options ul.options-list label:hover {
-  background-color: #e7e7e7;
+  /*background-color: #e7e7e7;*/
 }
 .form-list .control .no-display + label,
 .sp-methods dt .no-display + label,
@@ -2799,7 +2812,7 @@ p.required,
 .col2-set .form-list .control label {
   min-width: inherit;
   width: 250px;
-  max-width: 100%;
+  /*max-width: 100%;*/
 }
 
 .form-list .control.remember-me-box label {
@@ -2810,6 +2823,8 @@ p.required,
 
 .form-list .control {
   margin-top: 10px;
+  float: left;
+  width: 25%;
 }
 .form-list .control label {
   float: none;
@@ -2875,7 +2890,6 @@ form .form-instructions {
 }
 
 .data-table tbody td .item-options {
-  margin-left: 20px;
   margin-top: 10px;
 }
 .data-table tbody td .item-options dt:after {
@@ -3088,7 +3102,7 @@ body {
   min-width: 320px;
   min-height: 100%;
   margin: 0 auto;
-  background: #f4f4f4;
+  background: white;
 }
 
 .wrapper:after {
@@ -3230,7 +3244,7 @@ body {
    position: relative;
   /*float: left;*/
   height: 44px;
-  background: #f4f4f4;
+  /*background: #f4f4f4;*/
   color: #636363;
   line-height: 42px;
   text-align: center;
@@ -3286,7 +3300,7 @@ a.skip-link {
  */
 @media only screen and (max-width: 770px) {
   .skip-link.skip-active {
-    background: #EDEDED;
+    /*background: #EDEDED;*/
     color: inherit;
   }
 
@@ -6100,28 +6114,32 @@ p.product-name a:hover {
  * Checkout - Layout
  * ============================================ */
 .cart-table {
-  float: left;
-  width: 60%;
+  /*float: left;*/
+  width: 100%;
 }
 
 .cart-forms,
 .cart-totals-wrapper,
 .crosssell {
-  float: right;
+  float: left;
   clear: right;
-  width: 40%;
-  padding-left: 20px;
+  width: 45%;
+}
+.cart-forms { 
+  margin-right: 10%;
 }
 
 .cart-totals,
 .cart-forms .discount,
 .cart-forms .giftcard,
 .cart-forms .shipping {
-  padding: 10px;
-  background-color: #f4f4f4;
-  border: 1px solid #cccccc;
+  /*padding: 10px;*/
+  /*background-color: #f4f4f4;*/
+  /*border: 1px solid #cccccc;*/
 }
-
+.cart-totals{
+  padding-top: 70px;
+}
 .cart-table,
 .cart-totals,
 .cart-forms .discount,
@@ -6200,7 +6218,7 @@ p.product-name a:hover {
  * ============================================ */
 .cart .page-title {
   margin-bottom: 15px;
-  border-bottom: 1px solid #ededed;
+  /*border-bottom: 1px solid #ededed;*/
 }
 .cart .page-title:after {
   content: '';
@@ -6215,8 +6233,8 @@ p.product-name a:hover {
 }
 
 .checkout-types {
-  float: right;
-  text-align: right;
+  float: left;
+  text-align: center;
   max-width: 100%;
   /* We always want this shipping method to display on its own line */
 }
@@ -6237,7 +6255,7 @@ p.product-name a:hover {
   margin-left: 0;
 }
 .checkout-types .method-checkout-cart-methods-multishipping {
-  display: block;
+  display: none;
 }
 .checkout-types.top li {
   display: inline-block;
@@ -6263,6 +6281,15 @@ p.product-name a:hover {
 .cart-totals .checkout-types .btn-checkout {
   margin-bottom: 7px;
 }
+
+ .btn-continue{
+    float:left;
+    text-decoration: none;
+  }
+  .btn-update{
+    float: right;
+    text-decoration: none;
+  }
 
 @media only screen and (max-width: 670px) {
   .checkout-types {
@@ -6337,7 +6364,8 @@ p.product-name a:hover {
 }
 .cart-table .product-cart-image .product-image img {
   max-width: 100%;
-  width: 100%;
+  /*width: 100%;*/
+  height: 150px;
 }
 .cart-table .product-cart-image a.cart-edit {
   display: none;
@@ -6353,6 +6381,7 @@ p.product-name a:hover {
 }
 .cart-table .btn-empty {
   float: left;
+  display: none;
 }
 .cart-table .product-cart-total,
 .cart-table .product-cart-price {
@@ -6418,7 +6447,6 @@ p.product-name a:hover {
   margin-bottom: 5px;
 }
 .cart-table .item-options {
-  padding-left: 15px;
 }
 
 @media only screen and (max-width: 770px) {
@@ -6569,6 +6597,7 @@ p.product-name a:hover {
   .cart-table .cart-footer-actions .btn-continue {
     float: left;
   }
+
   .cart-table .cart-footer-actions .btn-update,
   .cart-table .cart-footer-actions span.or {
     display: none;
@@ -6582,15 +6611,17 @@ p.product-name a:hover {
  * Checkout - Estimate Shipping and Tax
  * ============================================ */
 .shipping h2 {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 0 0 5px;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 25px;
 }
 .shipping select {
   max-width: 100%;
   height: 30px;
   display: block;
-  border: 1px solid silver;
+  border: none;
+  border-bottom: 1px solid silver;
+  float: right;
 }
 .shipping select.validation-failed {
   border-color: red;
@@ -6610,18 +6641,20 @@ p.product-name a:hover {
 }
 .shipping .form-list li {
   float: left;
-  margin: 5px 2% 10px 0;
+  /*margin: 5px 2% 10px 0;*/
 }
 .shipping .form-list .shipping-country {
-  width: 37%;
+  width: 100%;
 }
 .shipping .form-list .shipping-region {
-  width: 41%;
+  width: 100%;
 }
 .shipping .form-list .shipping-postcode {
   margin-right: 0;
-  width: 18%;
+  width: 100%;
 }
+
+
 .shipping .form-list .shipping-postcode input {
   margin-top: 4px;
 }
@@ -6631,12 +6664,17 @@ p.product-name a:hover {
 .shipping .form-list input {
   height: 30px;
   margin-top: 4px;
+  float: right;
 }
 .shipping .form-list label {
+  float: left;
   font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 13px;
   font-weight: 400;
+  height: 30px;
   text-transform: uppercase;
+  vertical-align: center;
+  margin-top: 6px;
 }
 .shipping .sp-methods {
   padding: 10px 0 0;
@@ -6661,12 +6699,18 @@ p.product-name a:hover {
   margin-left: 0;
 }
 .shipping #co-shipping-method-form .sp-methods dd label {
-  border: 1px solid #cccccc;
-  background-color: #e7e7e7;
+  background-color: white;
+  border: none;
   min-width: 220px;
 }
 .shipping #co-shipping-method-form .sp-methods dd label:hover {
-  background-color: #dbdbdb;
+  background-color: white;
+  border: none;
+}
+#co-shipping-method-form input{
+  float: none !important;
+  margin-left: 0 !important;
+
 }
 
 @media only screen and (max-width: 770px) {
@@ -6693,16 +6737,19 @@ p.product-name a:hover {
 .cart .cart-totals table {
   font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   text-transform: uppercase;
   width: 100%;
 }
 .cart .cart-totals table td {
   padding: 2px 0px;
+  vertical-align: bottom;
 }
 .cart .cart-totals table td:first-child {
   padding-right: 10px;
   min-width: 120px;
+  height: 45px;
+  vertical-align: bottom;
 }
 .cart .cart-totals table tbody tr:last-child td,
 .cart .cart-totals table tbody tr:last-child th {
@@ -6713,9 +6760,8 @@ p.product-name a:hover {
   border-bottom: 1px solid #E6E6E6;
 }
 .cart .cart-totals table tfoot td {
-  font-size: 24px;
   padding: 2px 5px;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 .cart .cart-totals table tfoot strong span,
 .cart .cart-totals table tfoot span.price {
@@ -6842,6 +6888,11 @@ p.product-name a:hover {
 /* ============================================ *
  * Checkout - One Page
  * ============================================ */
+.onepagetitle {
+  font-size: 16px !important;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 .checkout-onepage-index .col-right,
 .checkout-onepage-index .col-left {
   display: none;
@@ -6868,7 +6919,7 @@ p.product-name a:hover {
   }
 }
 .opc select {
-  width: 365px;
+  width: 100%;
 }
 
 /* -------------------------------------------- *
@@ -6922,21 +6973,21 @@ p.product-name a:hover {
 .opc .section .step-title .number,
 .opc .section.allow.active .step-title .number,
 .no-touch .opc .section.allow:hover .step-title .number {
-  width: 26px;
+  width: 70px;
   height: 26px;
-  text-align: center;
-  color: #FFFFFF;
+  text-align: left;
+  color: #333333;
   line-height: 26px;
-  background-color: #333333;
+  font-size: 14px;
+  background-color: transparent;
   display: block;
   position: absolute;
-  top: 50%;
-  left: 10px;
+  top: 47%;
   margin-top: -13px;
 }
 
 .opc .section.allow .step-title .number {
-  background-color: #99cce5;
+  /*background-color: #99cce5;*/
 }
 
 .opc .section.allow .step-title h2 {
@@ -6954,7 +7005,7 @@ p.product-name a:hover {
   line-height: 40px;
   height: 40px;
   float: left;
-  margin: 0px 4px 0px 45px;
+  margin: 0px 4px 0px 60px;
 }
 
 .opc .section .step {
@@ -6965,6 +7016,18 @@ p.product-name a:hover {
   display: table;
   clear: both;
 }
+
+
+#checkout-step-login .col-1{
+  width: 100%;
+  float: none;
+  margin-bottom: 40px;
+}
+#checkout-step-login .col-2{
+    border-top: 1px solid grey;
+  width: 100%;
+  float: none;
+}
 @media only screen and (max-width: 979px) {
   .opc .section .step {
     padding: 10px;
@@ -6973,6 +7036,8 @@ p.product-name a:hover {
 
 .opc h3 {
   font-weight: 500;
+  font-size: 16px;
+  margin-top: 40px;
 }
 
 .opc .buttons-set {

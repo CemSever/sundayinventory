@@ -85,13 +85,12 @@
         </div>
     </div>
     <div class="col-2">
-        <h3><?php echo $this->__('Returning Customers') ?></h3>
+        <h3><?php echo $this->__('Login') ?></h3>
         <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
         <form id="login-form" action="<?php echo $this->getPostAction() ?>" method="post">
         <div class="fieldset">
             <?php echo $this->getBlockHtml('formkey'); ?>
-            <p class="description"><?php echo $this->__('Sign in to speed up your checkout process') ?></p>
-            <p class="required"><?php echo $this->__('* Required Fields') ?></p>
+            <p class="description"><?php echo $this->__('Already registered? Please login') ?></p>
             <ul class="form-list">
                 <li>
                     <label for="login-email" class="required"><em>*</em><?php echo $this->__('Email Address') ?></label>
@@ -105,6 +104,7 @@
                         <input type="password" class="input-text validate-password required-entry" id="login-password" name="login[password]" />
                     </div>
                 </li>
+                <li><p class="required"><?php echo $this->__('* Required Fields') ?></p></li>
                 <li>
                     <a href="<?php echo $this->getUrl('customer/account/forgotpassword') ?>" class="f-left"><?php echo $this->__('Forgot your password?') ?></a>
                 </li>
