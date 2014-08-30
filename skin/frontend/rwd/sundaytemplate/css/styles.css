@@ -1825,6 +1825,13 @@ a.button:hover {
 .tier-prices-grouped .price {
   font-weight: bold;
 }
+.estbut{
+  background-color: #333333 !important;
+  color: white !important;
+  float: left !important;
+  margin-left: 0px !important;
+  margin-top: 50px !important;
+}
 
 /* ============================================ *
  * Item Options
@@ -1842,16 +1849,14 @@ a.button:hover {
 .item-options dt {
   float: left;
   clear: left;
-  font-weight: 600;
-  padding-right: 5px;
-  font-style: italic;
+
 }
 .item-options dt:after {
   content: ': ';
 }
 .item-options dd {
   float: left;
-  padding-left: 10px;
+  padding-left: 1px;
   margin: 0 0 6px;
 }
 
@@ -2722,6 +2727,7 @@ p.required,
   margin-top: 4px;
   width: 365px;
   max-width: 100%;
+
 }
 .form-list .input-range .input-text {
   width: 74px;
@@ -2783,7 +2789,7 @@ p.required,
   max-width: none;
   min-width: 250px;
   float: none;
-  padding: 6px 10px 6px 40px;
+  padding: 6px 10px 0px 20px;
 }
 .form-list .control label:hover,
 .sp-methods dt label:hover,
@@ -2824,7 +2830,10 @@ p.required,
 .form-list .control {
   margin-top: 10px;
   float: left;
-  width: 25%;
+  width: 20%;
+}
+.control .radio {
+  margin-left: 0px !important;
 }
 .form-list .control label {
   float: none;
@@ -5089,7 +5098,7 @@ p.product-name a:hover {
 .product-view .add-to-cart-wrapper,
 .product-view .block-related {
   width: 50%;
-  float: right;
+  /*float: right;*/
   clear: right;
 }
 
@@ -5137,16 +5146,168 @@ p.product-name a:hover {
 .product-img-box .product-image {
   margin-bottom: 10px;
 }
-.product-img-box .product-image img {
-/*  max-width: 100%;
-  max-height: 750px;
-  margin: 0px auto;*/
+
+
+/***
+ * 25.08.2014
+ * Mathieu
+ *
+ * <body> prefixed with "custom-shop-mr" in view.phtml
+ **/
+
+.custom-shop-mr .product-essential{
+
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:320px;
+
 }
-#image-main{
-  max-width: 100%;
-  height: auto;
-  max-height: 1100px;
+
+.custom-shop-mr .product-img-box {
+
+  padding:0px !important;
+  margin:0px !important;
+  position:absolute;
+  left:320px;
+  right:50px;
+  width:auto;
+  bottom:50px;
+  top:50px;
+
 }
+
+.custom-shop-mr .product-img-box .product-image-zoom{
+
+  height:100%;
+  width:100%;
+
+}
+
+.custom-shop-mr .product-img-box .product-image-zoom .product-image-gallery{
+
+  height:100%;
+  width:100%;
+
+}
+
+.custom-shop-mr .product-img-box.full-height .product-image-zoom .product-image-gallery img#image-main{
+
+  height:100%;
+  width:auto;
+
+}
+
+.custom-shop-mr .product-img-box.full-width .product-image-zoom .product-image-gallery img#image-main{
+
+  height:auto;
+  width:100%;
+
+}
+
+
+.custom-shop-mr .product-img-box .product-image-zoom .product-image-gallery img#image-main{
+
+  height:100%;
+  width:auto;
+
+}
+
+
+.custom-shop-mr .product-view{
+  
+  margin-top:50px;
+  width:100%;
+  position:relative;
+
+}
+
+.custom-shop-mr  .col-main{
+
+  width:100%;
+  position:relative;
+
+}
+
+.custom-shop-mr .main{
+
+  width:100%;
+  position:relative;
+
+}
+
+.custom-shop-mr .col1-layout{
+
+  width:100%;
+  position:relative;
+
+}
+
+.custom-shop-mr .required{
+
+  display:none;
+
+}
+
+.custom-shop-mr .product-options{
+
+  border:0px;
+
+}
+
+.custom-shop-mr .product-name span.h1{
+
+  font-size:14px;
+
+}
+
+.custom-shop-mr .price-info{
+
+  float:none !important;
+  text-align:left !important;
+  padding:0px !important;
+
+}
+
+.custom-shop-mr .sharing-links{
+
+  height:0px;
+  overflow:hidden;
+  -webkit-transition:height 0.2s ease-in;
+  transition:height 0.2s ease-in;
+
+}
+
+.custom-shop-mr .sharing-links.open{
+
+  height:30px;
+
+}
+
+.custom-shop-mr .product-options-bottom{
+
+  background-color:transparent;
+  padding:0px;
+  border:0px;
+
+}
+
+.custom-shop-mr .product-options-bottom .add-to-cart{
+
+  border:0px;
+
+}
+
+.custom-shop-mr .product-options-bottom .qty-wrapper{
+
+  display:none;
+
+}
+
+/***
+ * Mathieu - END
+ **/
+
 
 @media only screen and (max-width: 479px) {
   .product-img-box .product-image img {
@@ -5299,6 +5460,10 @@ p.product-name a:hover {
   float: left;
   min-width: 160px;
   width: 100%;
+}
+
+.catalog-product-view .qty-wrapper {
+  display: none;
 }
 
 @media only screen and (max-width: 479px) {
@@ -6290,7 +6455,9 @@ p.product-name a:hover {
     float: right;
     text-decoration: none;
   }
-
+.product-cart-actions .btn-update {
+  display: none !important;
+}
 @media only screen and (max-width: 670px) {
   .checkout-types {
     float: none;
@@ -6325,6 +6492,7 @@ p.product-name a:hover {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0;
+  font-weight: normal;
 }
 .cart-table thead th,
 .cart-table tbody td {
@@ -6334,7 +6502,7 @@ p.product-name a:hover {
 }
 .cart-table .product-cart-info,
 .cart-table .product-cart-actions {
-  padding-left: 15px;
+  /*padding-left: 15px;*/
 }
 .cart-table tr {
   border-bottom: 1px solid silver;
@@ -6372,12 +6540,11 @@ p.product-name a:hover {
 }
 .cart-table .product-cart-sku {
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-style: italic;
   font-size: 12px;
   margin: 5px 0 12px;
 }
 .cart-table .product-cart-sku .label {
-  font-weight: 600;
+  /*font-weight: 600;*/
 }
 .cart-table .btn-empty {
   float: left;
@@ -6439,6 +6606,7 @@ p.product-name a:hover {
   height: 30px;
   border-color: silver;
   border-radius: 0;
+  border: 1px solid silver;
   margin-bottom: 10px;
   text-align: center;
   width: 3em;
@@ -6616,12 +6784,16 @@ p.product-name a:hover {
   margin: 0 0 25px;
 }
 .shipping select {
-  max-width: 100%;
+  width: 100%;
   height: 30px;
   display: block;
   border: none;
-  border-bottom: 1px solid silver;
-  float: right;
+  border: 1px solid silver;
+  /*float: right;*/
+  background-color: white;
+}
+.shipping-country label, .shipping-region label, .shipping-postcode label {
+  width: 100%;
 }
 .shipping select.validation-failed {
   border-color: red;
@@ -6760,7 +6932,7 @@ p.product-name a:hover {
   border-bottom: 1px solid #E6E6E6;
 }
 .cart .cart-totals table tfoot td {
-  padding: 2px 5px;
+  /*padding: 2px 5px;*/
   vertical-align: bottom;
 }
 .cart .cart-totals table tfoot strong span,
@@ -7124,7 +7296,8 @@ p.product-name a:hover {
 /* "opc-firststep-login" class if the first step of the checkout is the "Checkout Method" (eg, not when logged in) */
 body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title,
 body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login {
-  opacity: 0;
+  /*opacity: 0;*/
+
 }
 
 body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title .number {
@@ -7224,7 +7397,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   padding-top: 6px;
   margin: 0;
   margin-bottom: 10px;
-  color: #636363;
+  color: #333333;
   font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 14px;
   font-weight: bold;
@@ -7235,7 +7408,6 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   margin-bottom: 6px;
   text-transform: uppercase;
   font-weight: normal;
-  color: #a0a0a0;
 }
 .block-progress dt.complete {
   color: #636363;
@@ -7702,10 +7874,9 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 }
 
 .opc #opc-login p:not(.required) {
-  font-style: italic;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 13px;
-  color: #a0a0a0;
+  color: #333333;
 }
 
 .remember-me-box a.hide {

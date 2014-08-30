@@ -157,11 +157,7 @@
                         <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getDescription()), 'short_description') ?></div>
                     </div>
 
-                <div class="price-info">
-                    <?php echo $this->getPriceHtml($_product); ?>
-                    <?php echo $this->getChildHtml('bundle_prices') ?>
-                    <?php echo $this->getTierPriceHtml() ?>
-                </div>
+          
 
 
                 <?php echo $this->getChildHtml('other');?>
@@ -197,6 +193,11 @@
                     </div>
                 <?php endif; ?>
             </div>
+                  <div class="price-info">
+                    <?php echo $this->getPriceHtml($_product); ?>
+                    <?php echo $this->getChildHtml('bundle_prices') ?>
+                    <?php echo $this->getTierPriceHtml() ?>
+                </div>
 
             <a href="#" class="back-button shop">Back</a>
             <a href="#" class="share-button shop">Share</a>
