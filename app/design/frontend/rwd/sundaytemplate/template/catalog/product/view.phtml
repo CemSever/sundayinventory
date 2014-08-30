@@ -38,23 +38,101 @@
 </script>
 <script>
     jQuery(document).ready(function($){
+
         $('#header').hide();
         $('.footer').hide();
         $('.col1-layout').removeClass('main-container');
         $('.product-image').removeClass('product-image');
-        // $('.image-main').css('width','100%');
-        $('.product-essential').css('min-width','18%');
-         $('.product-essential').css('float','left');
-                 //$('.product-essential').css('min-width','15%');
-        $('.product-essential').css('display','inline-block');
-        $('.product-essential').css('vertical-align','top');
-        $('.product-img-box').css('display','inline-block');
-        $('.product-img-box').css('width','80%');
-        // $('#image-main').css('max-height','1100px');
+        
+
+        /***
+         * 25.08.2014
+         * Mathieu
+         **/
+
+        $('body').addClass('custom-shop-mr');
+        $('.product-img-box').appendTo($('body'));
+
+        $('.custom-shop-mr .share-button').on("click", function(e){
+
+            e.preventDefault();
+
+            $(".sharing-links").toggleClass("open");
+
+        });
+
+        $('.custom-shop-mr .back-button').on("click", function(e){
+
+            e.preventDefault();
+
+            window.history.back();
+
+        });
+
+
+        var cshop = {};
+
+        cshop.resizeImage = function(){
+
+            var ratio = $('.product-img-box #image-main').width() / $('.product-img-box #image-main').height();
+
+
+            if(ratio >= 1){
+                if($(".product-img-box").height() * ratio > $(".product-img-box").width() ){
+
+                    $('.product-img-box')
+                        .removeClass("full-height")
+                        .addClass("full-width");
+
+                }else if($(".product-img-box").width() * ratio > $(".product-img-box").height() ){
+
+                    $('.product-img-box')
+                        .addClass("full-height")
+                        .removeClass("full-width");
+
+                }
+            }else{
+                if($(".product-img-box").width() > $(".product-img-box").height() * ratio ){
+
+                    $('.product-img-box')
+                        .removeClass("full-width")
+                        .addClass("full-height");
+
+                }else if($(".product-img-box").height() > $(".product-img-box").width() * ratio ){
+
+                    $('.product-img-box')
+                        .addClass("full-width")
+                        .removeClass("full-height");
+
+                }
+            }
+
+        }
+
+        $(window).resize(cshop.resizeImage);
+
+        $("#image-main").one("load", function(e){
+
+            cshop.resizeImage();
+
+        })
+
+        /***
+         * Mathieu - END
+         **/
 
     });
 
+
 </script>
+
+   <div class="product-img-box">
+        <div class="product-name">
+            <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+        </div>
+        <?php echo $this->getChildHtml('media') ?>
+    </div>
+
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
 <div class="product-view">
     <div class="product-essential">        
@@ -71,12 +149,6 @@
                     <span class="h1"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>
                 </div>
 
-                <div class="price-info">
-                    <?php echo $this->getPriceHtml($_product); ?>
-                    <?php echo $this->getChildHtml('bundle_prices') ?>
-                    <?php echo $this->getTierPriceHtml() ?>
-                </div>
-
              
 
                 <?php echo $this->getChildHtml('alert_urls') ?>
@@ -85,7 +157,11 @@
                         <div class="std"><?php echo $_helper->productAttribute($_product, nl2br($_product->getDescription()), 'short_description') ?></div>
                     </div>
 
-
+                <div class="price-info">
+                    <?php echo $this->getPriceHtml($_product); ?>
+                    <?php echo $this->getChildHtml('bundle_prices') ?>
+                    <?php echo $this->getTierPriceHtml() ?>
+                </div>
 
 
                 <?php echo $this->getChildHtml('other');?>
@@ -95,6 +171,8 @@
                 <?php endif;?>
 
             </div>
+
+
 
             <div class="add-to-cart-wrapper">
                 <?php echo $this->getChildHtml('product_type_data') ?>
@@ -119,6 +197,9 @@
                     </div>
                 <?php endif; ?>
             </div>
+
+            <a href="#" class="back-button shop">Back</a>
+            <a href="#" class="share-button shop">Share</a>
 
             <?php echo $this->getChildHtml('related_products') ?>
 
@@ -182,13 +263,6 @@
 
         </script>
     </div>
-
-   <div class="product-img-box">
-                <div class="product-name">
-                    <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
-                </div>
-                <?php echo $this->getChildHtml('media') ?>
-            </div>
 
 
     <?php echo $this->getChildHtml('upsell_products') ?>
