@@ -9826,6 +9826,7 @@ div.paypal-logo span > img {
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
+  border-bottom: 1px solid silver;
 }
 .cms-page-view .col-left:after,
 .cms-no-route .col-left:after {
