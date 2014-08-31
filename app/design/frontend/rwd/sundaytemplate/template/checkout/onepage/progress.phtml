@@ -30,6 +30,7 @@
     </div>
     <div class="block-content">
         <dl>
+            <div class="progressTitle">YOUR CHECKOUT PROGRES</div>
             <?php if ($this->getCheckout()->getStepData('billing', 'is_show')): ?>
             <div id="billing-progress-opcheckout">
                 <?php echo $this->getChildHtml('billing.progress') ?>

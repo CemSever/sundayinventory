@@ -2519,6 +2519,7 @@ form .legend {
  */
 .input-box {
   padding-top: 2px;
+  width: 100%
 }
 .input-box:after {
   content: '';
@@ -2530,7 +2531,9 @@ form .legend {
 /* Example: credit card expiration month and year. */
 .input-box .v-fix {
   float: left;
-  margin-right: 5px;
+  margin-right: 1%;
+  width: 49%;
+
 }
 
 /* -------------------------------------------- *
@@ -2773,9 +2776,8 @@ p.required,
 .product-options ul.options-list input.checkbox {
   float: left;
   margin-right: -40px;
-  margin-top: 10px;
-  margin-left: 15px;
-}
+ margin-top: 10px;
+/**/}
 .form-list .control label,
 .sp-methods dt label,
 #checkout-shipping-method-load .sp-methods dd label,
@@ -3938,6 +3940,7 @@ display:none;
 }
 
 .footer {
+  display: none;
   clear: both;
   width: 100%;
   border-top: 1px solid #cccccc;
@@ -6291,6 +6294,7 @@ p.product-name a:hover {
   width: 45%;
 }
 .cart-forms { 
+  margin-top: 100px;
   margin-right: 10%;
 }
 
@@ -6303,7 +6307,13 @@ p.product-name a:hover {
   /*border: 1px solid #cccccc;*/
 }
 .cart-totals{
-  padding-top: 70px;
+  padding-top: 100px;
+}
+.totaltitle {
+  text-align: left;
+  font-size: 14px;
+padding-bottom: 65px;
+border-bottom: 1px solid silver;
 }
 .cart-table,
 .cart-totals,
@@ -6795,6 +6805,10 @@ p.product-name a:hover {
 .shipping-country label, .shipping-region label, .shipping-postcode label {
   width: 100%;
 }
+.shipping-country {
+  border-top: 1px solid silver;
+  padding-top: 10px;
+}
 .shipping select.validation-failed {
   border-color: red;
 }
@@ -6844,7 +6858,6 @@ p.product-name a:hover {
   font-size: 13px;
   font-weight: 400;
   height: 30px;
-  text-transform: uppercase;
   vertical-align: center;
   margin-top: 6px;
 }
@@ -6909,8 +6922,7 @@ p.product-name a:hover {
 .cart .cart-totals table {
   font-family: Times, "Times New Roman",Georgia, serif;
   font-size: 12px;
-  margin-bottom: 100px;
-  text-transform: uppercase;
+  margin-bottom: 200px;
   width: 100%;
 }
 .cart .cart-totals table td {
@@ -6922,6 +6934,8 @@ p.product-name a:hover {
   min-width: 120px;
   height: 45px;
   vertical-align: bottom;
+  text-align: left;
+
 }
 .cart .cart-totals table tbody tr:last-child td,
 .cart .cart-totals table tbody tr:last-child th {
@@ -7092,6 +7106,8 @@ p.product-name a:hover {
 }
 .opc select {
   width: 100%;
+  height: 30px;
+background-color: white;
 }
 
 /* -------------------------------------------- *
@@ -7181,7 +7197,7 @@ p.product-name a:hover {
 }
 
 .opc .section .step {
-  padding: 20px;
+  padding-top: 20px;padding-bottom: 20px;
 }
 .opc .section .step:after {
   content: '';
@@ -7317,13 +7333,19 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 }
 .sp-methods dt {
   margin: 13px 0 5px;
-  font-weight: bold;
 }
 .sp-methods dt:first-child {
   margin: 0 0 5px;
 }
 .sp-methods dd li {
   margin: 5px 0;
+}
+.sp-methods label {
+  /*margin-left: 20px;*/
+  
+}
+.sp-methods label[for=s_method_flatrate_flatrate] {
+  margin-left: 0px !important
 }
 .sp-methods label img {
   float: left;
@@ -7334,7 +7356,6 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   margin-left: 10px;
 }
 .sp-methods .price {
-  font-weight: bold;
 }
 .sp-methods .form-list {
   padding-left: 20px;
@@ -7343,14 +7364,13 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   margin: 0 0 8px;
 }
 .sp-methods select.month {
-  width: 120px;
+  /*width: 120px;*/
   margin-right: 10px;
 }
 .sp-methods select.year {
-  width: 96px;
 }
 .sp-methods input.cvv {
-  width: 4em !important;
+  /*width: 4em !important;*/
 }
 .sp-methods .checkmo-list li {
   margin: 0 0 5px;
@@ -7391,11 +7411,24 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   padding-left: 20px;
 }
 .block-progress .block-content {
-  font-size: 13px;
+  font-size: 14px;
+  border: 1px solid silver;
+  padding-top: 10px;padding-left: 10px;padding-right: 10px;
+
+}
+#payment-progress-opcheckout dt{
+  border:none !important;
+}
+.progressTitle{
+  margin-bottom: 10px;
+  border-bottom: 1px solid silver;
+  line-height: 25px;
 }
 .block-progress dt {
   padding-top: 6px;
+  border-bottom: 1px solid silver;
   margin: 0;
+  height: 30px;
   margin-bottom: 10px;
   color: #333333;
   font-family: Times, "Times New Roman",Georgia, serif;
@@ -7404,22 +7437,20 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   font-style: normal;
   line-height: 1.4;
   text-rendering: optimizeSpeed;
-  text-transform: uppercase;
   margin-bottom: 6px;
-  text-transform: uppercase;
   font-weight: normal;
+
 }
 .block-progress dt.complete {
   color: #636363;
 }
 .block-progress dd {
-  padding-left: 15px;
   margin-bottom: 10px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
 }
 .block-progress dd address {
-  font-style: italic;
+  font-size: 12px;
 }
 .block-progress #payment-progress-opcheckout .subtitle {
   margin-bottom: 3px;
