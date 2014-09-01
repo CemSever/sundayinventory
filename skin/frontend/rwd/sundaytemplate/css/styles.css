@@ -639,7 +639,7 @@ h6, .h6 {
 .product-name h1,
 .product-name .h1 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 600;
   color: #636363;
   border-bottom: 1px solid #ededed;
@@ -826,6 +826,12 @@ body:not(.customer-account) .block:first-child .block-title {
   .sidebar .block-cms-menu .block-title > strong span:after {
     content: ' Menu';
   }
+}
+.back-button {
+  width:100%;
+}
+.share-button {
+  width:100%;
 }
 /* -------------------------------------------- *
  * Secondary Navigation
@@ -1731,9 +1737,11 @@ a.button:hover {
 }
 
 .price-notice {
-  color: #a0a0a0;
+  /*color: #a0a0a0;*/
 }
-
+.price-notice .price {
+  float:right;
+}
 .price-box .price {
   color: #333333;
   font-size: 16px;
@@ -5164,7 +5172,7 @@ p.product-name a:hover {
   top:0px;
   left:0px;
   width:320px;
-
+  padding-left: 25px;
 }
 
 .custom-shop-mr .product-img-box {
@@ -5269,7 +5277,7 @@ p.product-name a:hover {
   float:none !important;
   text-align:left !important;
   padding:0px !important;
-
+  display: none;
 }
 
 .custom-shop-mr .sharing-links{
@@ -5292,6 +5300,7 @@ p.product-name a:hover {
   background-color:transparent;
   padding:0px;
   border:0px;
+  margin-top: 50px;
 
 }
 
@@ -5387,6 +5396,10 @@ p.product-name a:hover {
 .product-view .block-related,
 .box-collateral {
   margin-bottom: 10px;
+}
+.product-shop {
+  padding-right: 50px;
+  padding-left:0px !important;
 }
 
 .product-view {
@@ -5820,7 +5833,7 @@ p.product-name a:hover {
 .product-options {
   width: 100%;
   margin: 10px 0 0;
-  padding: 10px 15px 15px;
+  /*padding: 10px 15px 15px;*/
   border: 1px solid #cccccc;
   clear: both;
   position: relative;
@@ -5912,10 +5925,13 @@ p.product-name a:hover {
 .product-options ul.options-list li {
   line-height: 1.5;
   margin-bottom: 7px;
+  border-top: 1px dotted silver;
 }
 
 .product-options ul.options-list li:last-child {
-  margin-bottom: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px dotted silver;
+
 }
 
 .product-options ul.options-list .radio,
@@ -7823,6 +7839,7 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
 .product-view .product-options dd .input-box {
   width: auto;
   height: auto;
+  margin-top: 50px;
 }
 
 .product-options .select-label {

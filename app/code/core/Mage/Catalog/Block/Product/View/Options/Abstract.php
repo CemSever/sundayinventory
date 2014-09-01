@@ -111,22 +111,25 @@ abstract class Mage_Catalog_Block_Product_View_Options_Abstract extends Mage_Cor
      */
     protected function _formatPrice($value, $flag=true)
     {
-        if ($value['pricing_value'] == 0) {
-            return '';
-        }
-
+       
         $taxHelper = Mage::helper('tax');
         $store = $this->getProduct()->getStore();
 
-        $sign = '+';
+        $sign = '';
         if ($value['pricing_value'] < 0) {
             $sign = '-';
             $value['pricing_value'] = 0 - $value['pricing_value'];
         }
 
         $priceStr = $sign;
-        $_priceInclTax = $this->getPrice($value['pricing_value'], true);
-        $_priceExclTax = $this->getPrice($value['pricing_value']);
+        // $_priceInclTax = $this->getPrice($value['pricing_value'], true);
+        $_priceInclTax = $this->getPrice($value['pricing_value'], true)+$this->getProduct()->getFinalPrice();
+        // $_priceExclTax = $this->getPrice($value['pricing_value']);
+        $_priceExclTax = $this->getPrice($sign.$value['pricing_value'])+$this->getProduct()->getFinalPrice();
+
+    
+
+
         if ($taxHelper->displayPriceIncludingTax()) {
             $priceStr .= $this->helper('core')->currencyByStore($_priceInclTax, $store, true, $flag);
         } elseif ($taxHelper->displayPriceExcludingTax()) {

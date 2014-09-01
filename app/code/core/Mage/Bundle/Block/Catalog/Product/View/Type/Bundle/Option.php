@@ -190,7 +190,7 @@ class Mage_Bundle_Block_Catalog_Product_View_Type_Bundle_Option extends Mage_Bun
         $priceTitle = $_selection->getSelectionQty() * 1 . ' x ' . $this->escapeHtml($_selection->getName());
 
         $priceTitle .= ' &nbsp; ' . ($includeContainer ? '<span class="price-notice">' : '')
-            . '+' . $this->formatPriceString($price, $includeContainer)
+            . '+' . $this->formatPriceString($price, $includeContainer) 
             . ($includeContainer ? '</span>' : '');
 
         return $priceTitle;
@@ -230,7 +230,7 @@ class Mage_Bundle_Block_Catalog_Product_View_Type_Bundle_Option extends Mage_Bun
         $priceTitle .= ' &nbsp; ' . ($includeContainer ? '<span class="price-notice">' : '')
             . '+' . $this->formatPriceString($price, $includeContainer)
             . ($includeContainer ? '</span>' : '');
-        return $priceTitle;
+        return;
     }
 
     /**

@@ -127,9 +127,7 @@
 </script>
 
    <div class="product-img-box">
-        <div class="product-name">
-            <h1><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
-        </div>
+      
         <?php echo $this->getChildHtml('media') ?>
     </div>
 
@@ -168,7 +166,9 @@
 
             </div>
 
-
+            <a href="#" class="back-button shop">Back</a>
+            <br>
+            <a href="#" class="share-button shop">Share</a>
 
             <div class="add-to-cart-wrapper">
                 <?php echo $this->getChildHtml('product_type_data') ?>
@@ -199,8 +199,7 @@
                     <?php echo $this->getTierPriceHtml() ?>
                 </div>
 
-            <a href="#" class="back-button shop">Back</a>
-            <a href="#" class="share-button shop">Share</a>
+
 
             <?php echo $this->getChildHtml('related_products') ?>
 
